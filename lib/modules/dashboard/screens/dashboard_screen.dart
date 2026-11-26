@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:waygo/modules/bookings/screens/search_bus_screen.dart';
 
 import '../../../core/utils/responsive.dart';
 
 import '../pages/home_page.dart';
-import '../pages/bookings_page.dart';
 import '../pages/track_page.dart';
 import '../pages/tickets_page.dart';
 
@@ -32,7 +32,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     HomePage(
       passengerName: widget.passenger?['name'] ?? 'Passenger',
     ),
-    const BookingsPage(),
+    const SearchBusScreen(),
     const TrackPage(),
     const TicketsPage(),
   ];
